@@ -5,29 +5,14 @@ public class Car {
 	int speed;
 
 	public Car() {
-		/*
-		carName = "쏘나타";
-		color = "검정색";
-		maker = "현대";
-		*/
 		this("쏘나타", "검정색", "현대");
 	}
 
 	public Car(String color) {
-		/*
-		carName = "쏘나타";
-		this.color = color;
-		maker = "현대";
-		*/
 		this("쏘나타", color, "현대");
 	}
 
 	public Car(String carName, String color) {
-		/*
-		this.carName = carName;
-		this.color = color;
-		maker = "현대";
-		*/
 		this(carName, color, "현대");
 	}
 
@@ -37,29 +22,33 @@ public class Car {
 		this.maker = maker;
 	}
 
-	void speedUp() {
-		speed += 10;
-	}
-
 	int speedUp(int speed) {
-		speed += speed;
-		return speed;
-	}
-
-	void speedDown() {
-		speed -= 10;
-		if(speed < 0)
-			stop();
+		this.speed += speed;
+		return this.speed;
 	}
 
 	int speedDown(int speed) {
-		speed -= speed;
-		if(speed < 0)
+		this.speed -= speed;
+		if(this.speed < 0)
 			stop();
-		return speed;
+		return this.speed;
 	}
 
 	void stop() {
 		speed = 0;
+	}
+
+	@Override
+	public String toString() {
+		return maker + "에서 만든 " + color + " " + carName;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		Car car = (Car) obj;
+		//if(carName == car.carName)//""일 경우는 true, new String("")일 경우는 false.
+		if(carName.equals(car.carName))
+			return true;
+		return false;
 	}
 }

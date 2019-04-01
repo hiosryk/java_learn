@@ -42,8 +42,8 @@ public class Car {
 	}
 
 	int speedUp(int speed) {
-		speed += speed;
-		return speed;
+		this.speed += speed;
+		return this.speed;
 	}
 
 	void speedDown() {
@@ -53,13 +53,17 @@ public class Car {
 	}
 
 	int speedDown(int speed) {
-		speed -= speed;
-		if(speed < 0)
+		this.speed -= speed;
+		if(this.speed < 0)
 			stop();
-		return speed;
+		return this.speed;
 	}
 
 	void stop() {
 		speed = 0;
+	}
+
+	String info() {
+		return "차이름 : " + carName + "  색상 : " + color + " 제조사 : " + maker;
 	}
 }

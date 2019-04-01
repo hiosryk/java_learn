@@ -1,0 +1,22 @@
+** 수정자(modifier)
+1. abstract
+2. static : 공유
+3. final	
+ a.class	: 상속 불가.
+ b.method	: override 불가.
+ c.veriable	: 상수 
+
+
+		abstract	static			final
+
+class		o		x(inner class제외)	o		
+method		o		o			o
+variable	x		o			o
+
+class A {
+
+ class B {
+
+ }
+
+}
