@@ -1,13 +1,13 @@
 * java setting
-1. oracle.com >> jdk download >> ¼³Ä¡
-2. È¯°æº¯¼ö ¼³Á¤. (ÄÄÇ»ÅÍ ¿À¸¥ ¸¶¿ì½º >> ¼Ó¼º >> °í±Ş½Ã½ºÅÛ¼³Á¤ >> È¯°æº¯¼ö >> ½Ã½ºÅÛº¯¼ö)
-  /////////////////// »õ·Î¸¸µé±â ///////////////////
-  	º¯¼ö ÀÌ¸§	°ª
+1. oracle.com >> jdk download >> ì„¤ì¹˜
+2. í™˜ê²½ë³€ìˆ˜ ì„¤ì •. (ì»´í“¨í„° ì˜¤ë¥¸ ë§ˆìš°ìŠ¤ >> ì†ì„± >> ê³ ê¸‰ì‹œìŠ¤í…œì„¤ì • >> í™˜ê²½ë³€ìˆ˜ >> ì‹œìŠ¤í…œë³€ìˆ˜)
+  /////////////////// ìƒˆë¡œë§Œë“¤ê¸° ///////////////////
+  	ë³€ìˆ˜ ì´ë¦„	ê°’
   2-1.	JAVA_HOME	C:\Program Files\Java\jdk1.8.0_202
   2-2.	CLASSPATH	.
-  /////////////////// ÆíÁı /////////////////////
+  /////////////////// í¸ì§‘ /////////////////////
   2-3.	Path		%JAVA_HOME%\bin;          C:\app\KITRIGAME\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin
-3. ¼³Á¤ È®ÀÎ (cmd)
+3. ì„¤ì • í™•ì¸ (cmd)
 > java -version
 java version "1.8.0_202"
 Java(TM) SE Runtime Environment (build 1.8.0_202-b08)
@@ -23,22 +23,22 @@ where possible options include:
   .
   .
 
-* ½ÇÇà ¹æ¹ı
+* ì‹¤í–‰ ë°©ë²•
 			 (byte code)
 *.java	      >>       compile        >>     *.class       >>     run     >>     result
 HelloJava.java			         HelloJava.class		     Hello Java !!!!
                  javac HelloJava.java			    java HelloJava
 
 ------------------------------------------------------------------------------
-* ¼ø¼­
-1. º¯¼ö(variable) (ÀÚ·áÇü, data type)
-2. ¿¬»êÀÚ(operator)
-3. Á¦¾î¹®(Á¶°Ç¹®[if, switch ~ case], ¹İº¹¹®[for, while, do ~ while])
-4. class (ÀÏ¹İ, Ãß»ó, ³»ºÎ, interface), »ó¼Ó
-   - field (¼Ó¼º)
-   - method (±â´É)
+* ìˆœì„œ
+1. ë³€ìˆ˜(variable) (ìë£Œí˜•, data type)
+2. ì—°ì‚°ì(operator)
+3. ì œì–´ë¬¸(ì¡°ê±´ë¬¸[if, switch ~ case], ë°˜ë³µë¬¸[for, while, do ~ while])
+4. class (ì¼ë°˜, ì¶”ìƒ, ë‚´ë¶€, interface), ìƒì†
+   - field (ì†ì„±)
+   - method (ê¸°ëŠ¥)
 5. package
-   - »ç¿ëÀÚÁ¤ÀÇ package
+   - ì‚¬ìš©ìì •ì˜ package
    - system package
      - java.lang
      - java.io
@@ -50,89 +50,89 @@ HelloJava.java			         HelloJava.class		     Hello Java !!!!
      .
      .
 -----------------------------------------------------------------------------
-* Á¢±ÙÁ¦¾îÀÚ (access modifier)
-  private	ÀÚ½ÅÀÇ Å¬·¡½º ¾È¿¡¼­¸¸ »ç¿ë°¡´É.
-  default(»ı·«)	private + °°Àº package(Æú´õ)¾È¿¡¼­´Â »ç¿ë °¡´É.
-  protected	default + package°¡ ´Ş¶óµµ µÎ Å¬·¡½º°¡ »ó¼Ó °ü°èÀÏ °æ¿ì »ç¿ë°¡´É.
-  public	Á¶°Ç Á¦ÇÑ ¾øÀÌ »ç¿ë°¡´É.
+* ì ‘ê·¼ì œì–´ì (access modifier)
+  private	ìì‹ ì˜ í´ë˜ìŠ¤ ì•ˆì—ì„œë§Œ ì‚¬ìš©ê°€ëŠ¥.
+  default(ìƒëµ)	private + ê°™ì€ package(í´ë”)ì•ˆì—ì„œëŠ” ì‚¬ìš© ê°€ëŠ¥.
+  protected	default + packageê°€ ë‹¬ë¼ë„ ë‘ í´ë˜ìŠ¤ê°€ ìƒì† ê´€ê³„ì¼ ê²½ìš° ì‚¬ìš©ê°€ëŠ¥.
+  public	ì¡°ê±´ ì œí•œ ì—†ì´ ì‚¬ìš©ê°€ëŠ¥.
 
-* ÀÚ·áÇü (data type)
+* ìë£Œí˜• (data type)
   data type 
-    - ±âº»Çü DT		DT		size	etc
-      - ³í¸®Çü		boolean		1byte	true, false
-      - ¹®ÀÚÇü		char		2	'1', 'a', '±è',    'abc' << X
-      						Æ¯¼ö¹®ÀÚ : '\t'(tab), '\n'(°³Çà), '\''('), '\"'("), '\\'(\)      
-      - ¼ıÀÚÇü		
-        - Á¤¼öÇü	byte		1
+    - ê¸°ë³¸í˜• DT		DT		size	etc
+      - ë…¼ë¦¬í˜•		boolean		1byte	true, false
+      - ë¬¸ìí˜•		char		2	'1', 'a', 'ê¹€',    'abc' << X
+      						íŠ¹ìˆ˜ë¬¸ì : '\t'(tab), '\n'(ê°œí–‰), '\''('), '\"'("), '\\'(\)      
+      - ìˆ«ìí˜•		
+        - ì •ìˆ˜í˜•	byte		1
 			short		2
 			int		4
 			long		8
-	- ½Ç¼öÇü	float		4
+	- ì‹¤ìˆ˜í˜•	float		4
 			double		8
 
-    - ÂüÁ¶Çü DT : Object, ¹è¿­(array)
+    - ì°¸ì¡°í˜• DT : Object, ë°°ì—´(array)
 
-* ¸í¸í±ÔÄ¢
-1. ¿µ¹®, ¼ıÀÚ, ÇÑ±Û°¡´É. ¿µ¹®À¸·Î ½ÃÀÛ.(¼ıÀÚ½ÃÀÛ X)
-2. Å¬·¡½º´Â ´ë¹®ÀÚ·Î, ¸Ş¼Òµå³ª º¯¼ö´Â ¼Ò¹®ÀÚ·Î ½ÃÀÛ.
-   ÇÕ¼º¾îÀÇ °æ¿ì ´Ü¾îÀÇ Ã¹±ÛÀÚ¸¦ ´ë¹®ÀÚ·Î. (Camel case)
-3. Æ¯¼ö¹®ÀÚ »ç¿ë X (´Ü, _ $´Â °¡´É.)
-4. ¿¹¾à¾î »ç¿ë X
+* ëª…ëª…ê·œì¹™
+1. ì˜ë¬¸, ìˆ«ì, í•œê¸€ê°€ëŠ¥. ì˜ë¬¸ìœ¼ë¡œ ì‹œì‘.(ìˆ«ìì‹œì‘ X)
+2. í´ë˜ìŠ¤ëŠ” ëŒ€ë¬¸ìë¡œ, ë©”ì†Œë“œë‚˜ ë³€ìˆ˜ëŠ” ì†Œë¬¸ìë¡œ ì‹œì‘.
+   í•©ì„±ì–´ì˜ ê²½ìš° ë‹¨ì–´ì˜ ì²«ê¸€ìë¥¼ ëŒ€ë¬¸ìë¡œ. (Camel case)
+3. íŠ¹ìˆ˜ë¬¸ì ì‚¬ìš© X (ë‹¨, _ $ëŠ” ê°€ëŠ¥.)
+4. ì˜ˆì•½ì–´ ì‚¬ìš© X
 
-* ÁÖ¼®¹®.
-// : ÇÑÁÙ ÁÖ¼®
+* ì£¼ì„ë¬¸.
+// : í•œì¤„ ì£¼ì„
 
 /*
 .
 .
 .
-*/ : ¿©·¯ÁÙ ÁÖ¼®.
+*/ : ì—¬ëŸ¬ì¤„ ì£¼ì„.
 
 /**
 *
 *
-*/ : document ÁÖ¼®.
+*/ : document ì£¼ì„.
 
-1. º¯¼ö(Variable) : ÇÏ³ªÀÇ °ªÀ» ÀúÀåÇÏ´Â °ø°£.
-  1-1. ±âº»Çü(primitive) Data Type
-    1-1-1. ¼±¾ğ
-      Çü½Ä)
-	Á¢±ÙÁ¦¾îÀÚ ÀÚ·áÇü º¯¼ö¸í;
-      ¿¹)
+1. ë³€ìˆ˜(Variable) : í•˜ë‚˜ì˜ ê°’ì„ ì €ì¥í•˜ëŠ” ê³µê°„.
+  1-1. ê¸°ë³¸í˜•(primitive) Data Type
+    1-1-1. ì„ ì–¸
+      í˜•ì‹)
+	ì ‘ê·¼ì œì–´ì ìë£Œí˜• ë³€ìˆ˜ëª…;
+      ì˜ˆ)
         private int age;
 	char gender;
 	public String carName;
 	boolean flag;
 
-    1-1-2. »ç¿ë(°ªÀúÀå, °ªÇÒ´ç)
-      Çü½Ä)
-	º¯¼ö¸í = °ª;
-      ¿¹)
+    1-1-2. ì‚¬ìš©(ê°’ì €ì¥, ê°’í• ë‹¹)
+      í˜•ì‹)
+	ë³€ìˆ˜ëª… = ê°’;
+      ì˜ˆ)
         age = 25;
-	gender = '³²';
-	carName = "½î³ªÅ¸";
+	gender = 'ë‚¨';
+	carName = "ì˜ë‚˜íƒ€";
 	flag = true;
 
 
-	>>>>>>>>>>>>>>> 1, 2¸¦ µ¿½Ã¿¡..
-	Çü½Ä)
-	  Á¢±ÙÁ¦¾îÀÚ ÀÚ·áÇü º¯¼ö¸í = °ª;
-	¿¹)
+	>>>>>>>>>>>>>>> 1, 2ë¥¼ ë™ì‹œì—..
+	í˜•ì‹)
+	  ì ‘ê·¼ì œì–´ì ìë£Œí˜• ë³€ìˆ˜ëª… = ê°’;
+	ì˜ˆ)
 	  private int age = 25;
-	  char gender = '¿©';
-	  public String carName = "½î³ªÅ¸";
+	  char gender = 'ì—¬';
+	  public String carName = "ì˜ë‚˜íƒ€";
 	  boolean flag = true;
 
 
-  1-2. ÂüÁ¶Çü(reference) Data Type
+  1-2. ì°¸ì¡°í˜•(reference) Data Type
 
 
-2. ¿¬»êÀÚ (Operator)
-  2-1. ´ÜÇ×¿¬»êÀÚ
-   a. 1Áõ°¡(°¨¼Ò)¿¬»êÀÚ : ++, --
-      º¯¼ö++ : ¼±½ÇÇà ÈÄÁõ°¡
-      ++º¯¼ö : ¼±Áõ°¡ ÈÄ½ÇÇà
-      ¿¹)
+2. ì—°ì‚°ì (Operator)
+  2-1. ë‹¨í•­ì—°ì‚°ì
+   a. 1ì¦ê°€(ê°ì†Œ)ì—°ì‚°ì : ++, --
+      ë³€ìˆ˜++ : ì„ ì‹¤í–‰ í›„ì¦ê°€
+      ++ë³€ìˆ˜ : ì„ ì¦ê°€ í›„ì‹¤í–‰
+      ì˜ˆ)
       int x = 10;
       S.o.p(x);		10
       S.o.p(x++);	10	11	
@@ -144,12 +144,12 @@ HelloJava.java			         HelloJava.class		     Hello Java !!!!
       S.o.p(x++);	10	11
       S.o.p(x);		11
 
-  2-2. ÀÌÇ×¿¬»êÀÚ
-    a. »ê¼ú¿¬»êÀÚ : *, /, %(³ª¸ÓÁö), +, -
-    b. ºñ±³¿¬»êÀÚ
+  2-2. ì´í•­ì—°ì‚°ì
+    a. ì‚°ìˆ ì—°ì‚°ì : *, /, %(ë‚˜ë¨¸ì§€), +, -
+    b. ë¹„êµì—°ì‚°ì
       >, >=, <, <=, ==, !=
-      instance of : °´Ã¼ÀÇ type ºñ±³
-    c. ³í¸®¿¬»ê
+      instance of : ê°ì²´ì˜ type ë¹„êµ
+    c. ë…¼ë¦¬ì—°ì‚°
       &&(and)
       ||(or)
        &&  T	F	||  T	F
@@ -157,16 +157,16 @@ HelloJava.java			         HelloJava.class		     Hello Java !!!!
        T   T	F	T   T	T
        F   F	F	F   T	F
 
-  2-3. »ïÇ×¿¬»êÀÚ
-    a. Á¶°Ç(conditions) ? °ª1 : °ª2;
-      Á¶°Ç true	>> °ª1
-           false  >> °ª2
-  2-4. ´ëÀÔ¿¬»êÀÚ : =, +=, -=, *=, /=, %=
+  2-3. ì‚¼í•­ì—°ì‚°ì
+    a. ì¡°ê±´(conditions) ? ê°’1 : ê°’2;
+      ì¡°ê±´ true	>> ê°’1
+           false  >> ê°’2
+  2-4. ëŒ€ì…ì—°ì‚°ì : =, +=, -=, *=, /=, %=
 
 
 test)
 int x = 10;
-xÀÇ °ªÀ» 1Áõ°¡½ÃÅ°´Â ¹æ¹ı?
+xì˜ ê°’ì„ 1ì¦ê°€ì‹œí‚¤ëŠ” ë°©ë²•?
 x++;
 ++x;
 x = x + 1;

@@ -17,10 +17,10 @@ public class OperTest1
 		System.out.println("c == " + c);
 		System.out.println("(int)c == " + (int)c);
 
-		int y = c;//ÀÚµ¿Çüº¯È¯
+		int y = c;//ìë™í˜•ë³€í™˜
 		System.out.println("y == " + y);
 
-		c = (char)y;//°­Á¦Çüº¯È¯
+		c = (char)y;//ê°•ì œí˜•ë³€í™˜
 		System.out.println("c == " + c);
 
 		//boolean b = true;

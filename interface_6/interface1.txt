@@ -1,53 +1,53 @@
-**Interface : ²®µ¥±â, ¸í¼¼¼­, ¾à¼Ó, 
+**Interface : ê»ë°ê¸°, ëª…ì„¸ì„œ, ì•½ì†, 
 
-1.Ãß»ó¸Ş¼Òµå¸¸ °¡Áø Å¬·¡½ºÀÇ ÀÏÁ¾(»ó¼ö´Â °¡´É)
-	º¯¼ö, ±¸Çö¸Ş¼Òµåx
-Çü½Ä)
-Á¢±ÙÁ¦¾îÀÚ interface InterfaceName {
+1.ì¶”ìƒë©”ì†Œë“œë§Œ ê°€ì§„ í´ë˜ìŠ¤ì˜ ì¼ì¢…(ìƒìˆ˜ëŠ” ê°€ëŠ¥)
+	ë³€ìˆ˜, êµ¬í˜„ë©”ì†Œë“œx
+í˜•ì‹)
+ì ‘ê·¼ì œì–´ì interface InterfaceName {
 
-	»ó¼ö;
+	ìƒìˆ˜;
 
-	Á¢±ÙÁ¦¾îÀÚ returnType methodName([args]);
+	ì ‘ê·¼ì œì–´ì returnType methodName([args]);
 
 
 
-}                                                    //abstract ´ë½Å¿¡ interface¸¦ »ç¿ëÇÑ´Ù.
+}                                                    //abstract ëŒ€ì‹ ì— interfaceë¥¼ ì‚¬ìš©í•œë‹¤.
 
-2. interface´Â Å¬·¡½º¿¡ ±¸Çö ÈÄ »ç¿ë.
-	implements keywoed »ç¿ë.
-	´ÙÁß implements°¡ °¡´É.
- Çü½Ä)
- Á¢±ÙÁ¦¾îÀÚ class ClassName [extends ClassName] implements IN, IN2, IN3, ... {
+2. interfaceëŠ” í´ë˜ìŠ¤ì— êµ¬í˜„ í›„ ì‚¬ìš©.
+	implements keywoed ì‚¬ìš©.
+	ë‹¤ì¤‘ implementsê°€ ê°€ëŠ¥.
+ í˜•ì‹)
+ ì ‘ê·¼ì œì–´ì class ClassName [extends ClassName] implements IN, IN2, IN3, ... {
 
  }
 
 
 
 
-3. »óÀ§ Class		Interface		Class			Interface
+3. ìƒìœ„ Class		Interface		Class			Interface
 
 
-	extends		implements		  x			extends		//µ¿±Ş. ±¸Çö°ú »ó¼ÓÀÇ ÀÇ¹Ì¸¦ »ó½ÄÀûÀ¸·Î »ı°¢ÇÒ°Í.
+	extends		implements		  x			extends		//ë™ê¸‰. êµ¬í˜„ê³¼ ìƒì†ì˜ ì˜ë¯¸ë¥¼ ìƒì‹ì ìœ¼ë¡œ ìƒê°í• ê²ƒ.
 
 
-   ÇÏÀ§ Class		Class			Interface		Interface
+   í•˜ìœ„ Class		Class			Interface		Interface
 
 
 
 
-4. interface´Â °´Ã¼ »ı¼º ºÒ°¡´É.
-   Å¬·¡½º¿¡ implementsÇÑ ÈÄ Å¬·¡½º¸¦ ÂüÁ¶ÇÏ¿© °´Ã¼ »ı¼º.
-   implementsÇÑ Å¬·¡½º´Â ¹İµå½Ã interfaceÀÇ Ãß»ó ¸Ş¼Òµå¸¦ ¸ğµÎ overriding ÇØ¾ß ÇÑ´Ù.
+4. interfaceëŠ” ê°ì²´ ìƒì„± ë¶ˆê°€ëŠ¥.
+   í´ë˜ìŠ¤ì— implementsí•œ í›„ í´ë˜ìŠ¤ë¥¼ ì°¸ì¡°í•˜ì—¬ ê°ì²´ ìƒì„±.
+   implementsí•œ í´ë˜ìŠ¤ëŠ” ë°˜ë“œì‹œ interfaceì˜ ì¶”ìƒ ë©”ì†Œë“œë¥¼ ëª¨ë‘ overriding í•´ì•¼ í•œë‹¤.
 
-* »ó¼ö : º¯°æ ºÒ°¡´É °ª.
-Çü½Ä)
-public static final DT CONST_NAME = °ª;
-¿¹)
+* ìƒìˆ˜ : ë³€ê²½ ë¶ˆê°€ëŠ¥ ê°’.
+í˜•ì‹)
+public static final DT CONST_NAME = ê°’;
+ì˜ˆ)
 public final static int YEAR = "2019";
 public static final string CHARSET = "utf-8"
 
 
---¸í¼¼¼­--
+--ëª…ì„¸ì„œ--
 CPU : i7xxx
 RAM : 8GB
 GC : Gf..
@@ -56,5 +56,5 @@ Case : xxx
 kb : xx
 
 ----------
-xxx¿ø               //Áı¿¡°¡¼­ ¼ıÀÚ°íÄ£´Ù°í ³» ½ÇÁ¦ ÄÄÇ»ÅÍ ¼º´ÉÀÌ ¹Ù²îÁø¾Ê´Â´Ù. 
-¸í¼¼¼­´Â »çÀå´Ô°ú³ªÀÇ ¾à¼Ó.
+xxxì›               //ì§‘ì—ê°€ì„œ ìˆ«ìê³ ì¹œë‹¤ê³  ë‚´ ì‹¤ì œ ì»´í“¨í„° ì„±ëŠ¥ì´ ë°”ë€Œì§„ì•ŠëŠ”ë‹¤. 
+ëª…ì„¸ì„œëŠ” ì‚¬ì¥ë‹˜ê³¼ë‚˜ì˜ ì•½ì†.

@@ -1,15 +1,15 @@
-** ¼öÁ¤ÀÚ(modifier)
+** ìˆ˜ì •ì(modifier)
 1. abstract
-2. static : °øÀ¯
+2. static : ê³µìœ 
 3. final	
- a.class	: »ó¼Ó ºÒ°¡.
- b.method	: override ºÒ°¡.
- c.veriable	: »ó¼ö 
+ a.class	: ìƒì† ë¶ˆê°€.
+ b.method	: override ë¶ˆê°€.
+ c.veriable	: ìƒìˆ˜ 
 
 
 		abstract	static			final
 
-class		o		x(inner classÁ¦¿Ü)	o		
+class		o		x(inner classì œì™¸)	o		
 method		o		o			o
 variable	x		o			o
 
