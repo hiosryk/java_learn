@@ -24,12 +24,14 @@ public class SetTest {
 		for (int i = 0; i < len; i++) {
 			System.out.println(str[i]);
 		}
-		System.out.println("---------------------");
+		
+		System.out.println("----------------------");
 		
 		Iterator<String> iterate = set.iterator();
 		while(iterate.hasNext()) {
 			System.out.println(iterate.next());
 		}
+		
 	}
 	
 }
